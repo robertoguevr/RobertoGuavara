@@ -54,24 +54,18 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun ejercicio3(){
-        var x = 0
-        while (x<10){
-            println(x)
-            x++
+        var x = 30
+
+        for(numero in 0..x) {
+            println(numero)
         }
-        while (x<20){
-            println(x)
-            x+=2
+        for(numero in 0..x step 2){  println(numero)
         }
-        x = 10
-        while (x>10){
-            println(x)
-            x--
+        for(numero in x downTo 0){
+            println(numero)
         }
-        x = 30
-        while (x>30){
-            println(x)
-            x-=3
+        for(numero in x downTo 0 step 3){
+            println(numero)
         }
     }
 
